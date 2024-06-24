@@ -162,6 +162,7 @@ app.post('/api/multi-delete', async (req, res) => {
     }
 
 });
+
 app.post('/api/send-email', upload.single('attachment'),async (req, res) => {
     const { recipient, subject, html } = req.body;
     console.log(recipient);
